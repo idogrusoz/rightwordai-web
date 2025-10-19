@@ -1,0 +1,13 @@
+name: Azure Static Web Apps CI/CD (Next.js - Deprecated Duplicate)
+
+# This duplicate workflow has been deprecated in favor of azure-static-web-apps-nextjs.yml
+# It is retained only for reference and must be triggered manually if ever needed.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Use azure-static-web-apps-nextjs.yml for active deployments."
