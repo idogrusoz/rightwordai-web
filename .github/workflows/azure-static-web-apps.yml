@@ -1,0 +1,13 @@
+name: Azure Static Web Apps (Manual - Deprecated)
+
+# This workflow is kept only for reference and is not triggered automatically.
+# The active workflow is azure-static-web-apps-thankful-hill-05871db03.yml
+
+on:
+  workflow_dispatch:
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Use the primary workflow azure-static-web-apps-thankful-hill-05871db03.yml for deployments."
