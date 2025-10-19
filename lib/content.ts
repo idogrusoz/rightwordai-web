@@ -1,51 +1,50 @@
 export const navItems = [
-  { label: "Approach", href: "#approach" },
+  { label: "Reality Check", href: "#competitive-reality" },
   { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "Outcomes", href: "#outcomes" },
+  { label: "ROI Calculator", href: "#cost-of-delay" },
   { label: "Contact", href: "#contact" }
 ];
 
 export const heroContent = {
-  eyebrow: "AI systems for ambitious SMB teams",
-  headline: "Engineering intelligence into every critical workflow.",
+  eyebrow: "The AI divide isn't coming—it's here",
+  headline: "Your competitors are already automating. Are you?",
   subheadline:
-    "Rightword.AI partners with small and mid-sized businesses to design, build, and ship AI-first workflows that compound efficiency and unlock new revenue.",
-  primaryCta: { label: "Plan a roadmap call", href: "#contact" },
-  secondaryCta: { label: "See how we deliver", href: "#services" },
+    "Every quarter without AI-driven workflows costs you market share, talent, and growth. Rightword.AI builds the intelligent systems that keep ambitious SMBs ahead—before it's too late.",
+  primaryCta: { label: "Claim your strategy call", href: "#contact" },
+  secondaryCta: { label: "See the cost of waiting", href: "#cost-of-delay" },
   focusAreas: [
-    "Workflow automation",
-    "AI copilots & assistants",
-    "Operational analytics",
-    "Change enablement"
+    "Workflow automation that compounds",
+    "AI copilots your team actually trusts",
+    "Operational intelligence in real-time",
+    "Change enablement that sticks"
   ],
   promises: [
-    "Map high-leverage automation opportunities with your operators",
-    "Prototype AI interactions that earn team trust before scaling",
-    "Instrument adoption so leadership sees progress early"
+    "Identify automation opportunities your competitors are already exploiting",
+    "Ship AI workflows in weeks—not quarters—so you stop falling behind",
+    "Measure ROI from day one, prove value to leadership immediately"
   ]
 };
 
 export const valuePropositions = [
   {
-    title: "Automation that sticks",
+    title: "Speed wins markets",
     description:
-      "We map your daily workflows, identify leverage points, and ship AI copilots that your team actually trusts."
+      "While others plan and debate, we ship production AI in 6-10 weeks. Every month of delay is market share lost to faster competitors."
   },
   {
-    title: "Reliability by design",
+    title: "Built to compound",
     description:
-      "Enterprise-grade patterns, observability, and guardrails baked in from day one to keep operations resilient."
+      "Your competitors' AI investments are compounding monthly. Our systems create the same multiplier effect—starting now, not someday."
   },
   {
-    title: "Human-centered AI",
+    title: "No excuses, just results",
     description:
-      "Human-in-the-loop experiences that make teams faster without losing judgement or compliance."
+      "Legacy processes, manual workflows, and 'we'll do it later' attitudes are how companies fall behind. We eliminate all three."
   },
   {
-    title: "Measurable impact",
+    title: "ROI you can prove",
     description:
-      "Clear instrumentation and ROI tracking so leadership can see progress in weeks—not quarters."
+      "Leaders don't get left behind by accident—they hesitate while others act. We measure impact from day one so you never hesitate again."
   }
 ];
 
@@ -121,12 +120,12 @@ export const processSteps = [
 ];
 
 export const contactContent = {
-  headline: "Ready to outpace yesterday's workflow?",
+  headline: "Stop letting competitors eat your market share",
   subheadline:
-    "Drop us a note about the bottlenecks holding your team back. We'll outline the first automation opportunities within a week.",
+    "The gap widens every quarter. Book your strategy call now—only 3 slots left this quarter. If not now, when? If not you, who?",
   contactMethods: [
     { label: "hello@rightword.ai", href: "mailto:hello@rightword.ai" },
-    { label: "Book a discovery call", href: "https://cal.com/rightword-ai/roadmap" }
+    { label: "Claim your slot now", href: "https://cal.com/rightword-ai/roadmap" }
   ]
 };
 

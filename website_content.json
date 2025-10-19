@@ -1,0 +1,234 @@
+{
+  "site": {
+    "name": "Your Name — Software Engineer",
+    "locale": "en-US",
+    "industry_agnostic": true
+  },
+  "persona": {
+    "role": "Software Engineer",
+    "positioning": "Enterprise-grade engineer specializing in AI-enabled modernization and reliability.",
+    "expertise": [
+      "Complex, reliable, enterprise-level applications",
+      "AI/automation integration",
+      "Process modernization and error reduction",
+      "Scalable backend & cloud architectures"
+    ],
+    "focus": "Understand the client's problem deeply and deliver state-of-the-art, measurable solutions.",
+    "clients_example": [
+      "Customaite (startup)",
+      "Elia Group Belgium (industrial)"
+    ],
+    "promise": "Client satisfaction through efficiency, reliability, and measurable business outcomes."
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Work",
+      "href": "/work"
+    },
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "hero": {
+    "headline": "Engineering intelligence into every process.",
+    "subheadline": "I build reliable, AI-driven systems that replace time-consuming manual work—so your business runs faster, safer, and smarter.",
+    "primary_cta": {
+      "label": "Get a roadmap call",
+      "href": "/contact"
+    },
+    "secondary_cta": {
+      "label": "See examples",
+      "href": "/work"
+    }
+  },
+  "intros": {
+    "one_on_one_variants": [
+      "I help companies replace time-consuming manual work with smart, AI-driven systems that make their business faster and more reliable.",
+      "I design modern enterprise systems that eliminate inefficiency and prepare businesses for an AI-powered future.",
+      "I help leaders adopt AI without disrupting daily operations—boosting productivity without increasing headcount."
+    ],
+    "website_bio_short": "Software engineer specializing in enterprise-grade systems and AI modernization. I turn manual, error-prone processes into efficient, reliable software.",
+    "website_bio_long": "I’m a software engineer focused on building complex, reliable, enterprise-level applications that solve real business problems. I’ve worked with startups like Customaite and industry leaders such as Elia Group Belgium to modernize outdated, labor-heavy workflows into efficient, automated systems. My approach is simple: understand your challenges deeply, then deliver state-of-the-art solutions that improve performance, reduce errors, and scale with your growth. In an AI-driven world, the companies that adapt fastest win—I make sure my clients are among them."
+  },
+  "value": {
+    "propositions": [
+      {
+        "title": "Efficiency that compounds",
+        "description": "Replace repetitive, manual steps with automation that saves hours every week."
+      },
+      {
+        "title": "Reliability by design",
+        "description": "Enterprise patterns and rigorous testing to reduce errors and downtime."
+      },
+      {
+        "title": "AI where it matters",
+        "description": "Practical, measurable AI that augments teams and accelerates outcomes."
+      },
+      {
+        "title": "Scalable foundations",
+        "description": "Modern architectures that grow with the business, not against it."
+      }
+    ],
+    "outcomes": [
+      "Lower operational costs",
+      "Fewer human errors",
+      "Faster cycle times",
+      "Better visibility and decision-making"
+    ],
+    "proof_points": [
+      "Delivered enterprise-grade solutions across startup and industrial environments",
+      "Hands-on with AI/automation in production systems",
+      "Track record of translating business goals into shipped software"
+    ]
+  },
+  "services": [
+    {
+      "name": "AI & Automation Modernization",
+      "description": "Implement AI copilots, workflow automation, and decision systems that reduce manual work and errors.",
+      "bullets": [
+        "Process mapping and opportunity discovery",
+        "Prototype-to-production AI services",
+        "Measurement plans and ROI tracking"
+      ]
+    },
+    {
+      "name": "Enterprise System Design",
+      "description": "Design and build reliable, scalable systems tailored to complex business operations.",
+      "bullets": [
+        "Event-driven & cloud-native architectures",
+        "Testing, observability, and resilience engineering",
+        "Security and compliance-minded delivery"
+      ]
+    },
+    {
+      "name": "Legacy Workflow Replacement",
+      "description": "Transform time-consuming, spreadsheet or email-driven processes into robust applications.",
+      "bullets": [
+        "Human-in-the-loop workflows",
+        "Data validation & error reduction",
+        "Gradual migration with minimal disruption"
+      ]
+    }
+  ],
+  "process": {
+    "steps": [
+      {
+        "title": "01 — Discovery",
+        "description": "Deep-dive into your goals, constraints, and success metrics."
+      },
+      {
+        "title": "02 — Roadmap",
+        "description": "Clear milestones, risks, and ROI—before writing a line of code."
+      },
+      {
+        "title": "03 — Build",
+        "description": "Rapid iteration with testable increments and stakeholder feedback."
+      },
+      {
+        "title": "04 — Measure",
+        "description": "Track efficiency, error rates, and cycle times to prove value."
+      },
+      {
+        "title": "05 — Scale",
+        "description": "Harden, optimize, and extend as adoption grows."
+      }
+    ]
+  },
+  "fomo": {
+    "statements": [
+      "Your competitors are already integrating AI—don’t let legacy processes become your bottleneck.",
+      "In an AI-first market, operational speed is strategy. The gap widens every quarter.",
+      "Modernization isn’t optional anymore—it’s how leaders stay leaders."
+    ],
+    "banner_cta": "Let’s build your next advantage."
+  },
+  "social_proof": {
+    "clients": [
+      "Customaite",
+      "Elia Group Belgium"
+    ],
+    "testimonials_placeholder": [
+      {
+        "quote": "Concise impact statement from a client about efficiency and reliability.",
+        "author": "Client Name, Title"
+      }
+    ]
+  },
+  "contact": {
+    "headline": "Ready to work smarter?",
+    "subheadline": "Tell me about your bottlenecks—and I’ll map a path to measurable wins.",
+    "methods": [
+      {
+        "type": "email",
+        "value": "you@domain.com"
+      },
+      {
+        "type": "calendly",
+        "value": "https://calendly.com/your-handle/intro-call"
+      }
+    ]
+  },
+  "seo": {
+    "title": "Software Engineer — AI & Enterprise Modernization",
+    "description": "I build reliable, AI-driven systems that replace manual work and reduce errors—so your business runs faster and smarter.",
+    "keywords": [
+      "software engineer",
+      "enterprise software",
+      "AI modernization",
+      "automation",
+      "process optimization",
+      "reliability engineering"
+    ],
+    "open_graph": {
+      "title": "Engineering intelligence into every process.",
+      "description": "Reliable, AI-driven systems for modern businesses.",
+      "image": "/og-cover.png"
+    }
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Your Company"
+    },
+    "knowsAbout": [
+      "Enterprise software",
+      "Artificial intelligence",
+      "Automation",
+      "Cloud architecture"
+    ]
+  },
+  "variants": {
+    "headlines": [
+      "Turning complexity into clarity through AI.",
+      "Reliable software for an unpredictable world.",
+      "Smart systems for an AI-powered world."
+    ],
+    "taglines": [
+      "Helping businesses work smarter—not harder.",
+      "From manual to modern—measurably.",
+      "Build once. Scale confidently."
+    ],
+    "cta_texts": [
+      "Get a roadmap call",
+      "See how it works",
+      "Start a pilot"
+    ]
+  }
+}

@@ -8,6 +8,18 @@
 
 body {
   @apply bg-slate-50 text-slate-900 antialiased;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 main {
@@ -28,4 +40,89 @@ main {
 
 .blur-blob {
   filter: blur(110px);
+}
+
+/* Text gradient utilities */
+.text-gradient {
+  @apply bg-gradient-to-r from-brand-base to-brand-light bg-clip-text text-transparent;
+}
+
+.text-gradient-urgency {
+  @apply bg-gradient-to-r from-urgency-red to-urgency-amber bg-clip-text text-transparent;
+}
+
+.text-gradient-success {
+  @apply bg-gradient-to-r from-success-dark to-success-light bg-clip-text text-transparent;
+}
+
+/* Glass morphism effect */
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-slate-200/60;
+}
+
+/* Animated gradient background */
+.animated-gradient {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 242, 255, 0.6) 25%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(224, 231, 255, 0.4) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-shift 20s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hover lift effect for cards */
+.hover-lift {
+  @apply transition-transform duration-300 ease-out;
+}
+
+.hover-lift:hover {
+  @apply -translate-y-2 shadow-glow-intense;
+}
+
+/* Urgency indicator pulse */
+.urgency-indicator {
+  position: relative;
+}
+
+.urgency-indicator::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(45deg, #f59e0b, #ef4444);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: rotate-gradient 3s linear infinite;
+}
+
+@keyframes rotate-gradient {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  @apply fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-base to-brand-light z-50;
+  transform-origin: 0% 0%;
 }

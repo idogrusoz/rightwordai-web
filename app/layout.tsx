@@ -57,10 +57,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${plusJakarta.className} ${plusJakarta.variable} bg-slate-50 text-slate-900 antialiased selection:bg-brand-light/30 selection:text-slate-900 font-sans`}
+        className={`${plusJakarta.className} ${plusJakarta.variable} bg-white text-slate-900 antialiased selection:bg-brand-light/30 selection:text-slate-900 font-sans`}
       >
-        <div className="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[420px] bg-hero-sheen" />
-        <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(80%_100%_at_50%_-20%,rgba(91,124,250,0.16),transparent)]" />
         {children}
       </body>
     </html>
