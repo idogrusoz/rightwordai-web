@@ -1,0 +1,26 @@
+<svg width="620" height="420" viewBox="0 0 620 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pipeline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect x="30" y="60" width="560" height="260" rx="32" fill="rgba(15,23,42,0.65)" stroke="rgba(255,255,255,0.12)" />
+  <g fill="none" stroke-width="8" stroke-linecap="round">
+    <path d="M90 180 H520" stroke="url(#pipeline)" />
+    <circle cx="140" cy="180" r="20" stroke="rgba(148,163,184,0.8)" />
+    <circle cx="240" cy="180" r="20" stroke="rgba(148,163,184,0.8)" />
+    <circle cx="340" cy="180" r="20" stroke="rgba(148,163,184,0.8)" />
+    <circle cx="440" cy="180" r="20" stroke="rgba(148,163,184,0.8)" />
+  </g>
+  <g fill="rgba(255,255,255,0.12)">
+    <rect x="110" y="100" width="80" height="20" rx="10" />
+    <rect x="210" y="100" width="80" height="20" rx="10" />
+    <rect x="310" y="100" width="80" height="20" rx="10" />
+    <rect x="410" y="100" width="80" height="20" rx="10" />
+    <rect x="110" y="240" width="120" height="24" rx="12" />
+    <rect x="260" y="240" width="120" height="24" rx="12" />
+    <rect x="410" y="240" width="120" height="24" rx="12" />
+  </g>
+  <path d="M520 180 L560 150 L560 210 Z" fill="#8b5cf6" />
+</svg>

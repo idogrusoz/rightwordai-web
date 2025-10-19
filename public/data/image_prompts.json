@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "brand": "Rightword.AI",
+    "palette": ["#1e3a8a", "#1d4ed8", "#5b7cfa", "#eef2ff"],
+    "voice": "Confident, operator-centric, trustworthy"
+  },
+  "photo_scenes": [
+    {
+      "id": "hero-executive-alignment",
+      "usage": "Hero banner background panel or large supporting image",
+      "mood": "Bright morning light, calm confidence, in-the-zone collaboration",
+      "prompt": "High-resolution photo of a small business leadership team and an AI consultant collaborating around a modern glass table in a sunlit loft office. One person is annotating a blueprint-style operations map on a large transparent display, others review dashboards on laptops. Soft blue and violet ambient lighting accents reflect the brand palette. Include subtle AR-style interface overlays hovering over the workspace to suggest AI assistance. Capture natural expressions and professional attire, diverse representation, and crisp depth of field with focus on the collaborative moment.",
+      "negative_prompt": "overly futuristic holograms, headset devices, sci-fi lasers, cartoonish elements, clutter, harsh shadows, exaggerated smiles"
+    },
+    {
+      "id": "approach-operator-interview",
+      "usage": "Approach section card or inset image",
+      "mood": "Empathy-driven discovery, grounded and candid",
+      "prompt": "Photorealistic image of an AI strategist interviewing an operations lead in a bright workshop room. The strategist listens attentively while pointing to a tablet showing workflow diagrams; sticky notes with process steps are visible on the table. Warm natural light, shallow depth of field, brand hues subtly present through notebooks and laptop decals.",
+      "negative_prompt": "posed handshake, staged smiles, dim lighting, cluttered background, corporate stock photo look"
+    },
+    {
+      "id": "services-whiteboard-sprint",
+      "usage": "Services grid hero image",
+      "mood": "Energetic, problem-solving sprint",
+      "prompt": "Photorealistic scene of a cross-functional team standing around a large digital whiteboard covered with swimlanes, metrics, and sticky note tasks. One facilitator highlights a roadmap milestone while another updates a kanban column on a tablet. Emphasize candid interaction, mid-action gestures, and clear readability of process artifacts. Background should hint at a modern studio with soft brand-colored accent lighting.",
+      "negative_prompt": "empty room, messy handwriting, futuristic sci-fi devices, VR headsets, exaggerated gestures"
+    },
+    {
+      "id": "outcomes-analytics-review",
+      "usage": "Outcomes section supporting visual",
+      "mood": "Measured, evidence-driven, composed",
+      "prompt": "Photo of a mid-sized business analytics review taking place in a glass meeting room. Focus on a pair of analysts examining a large wall-mounted screen displaying clean automation performance charts, efficiency gauge, and compliance status. Include notebooks and a laptop on the table with dashboards matching the blue-purple palette. Lighting should be soft and natural with subtle reflections to signify transparency.",
+      "negative_prompt": "dark room, cluttered cables, unrealistic charts, futuristic holograms, tense expressions"
+    },
+    {
+      "id": "contact-human-connection",
+      "usage": "Contact section supportive image",
+      "mood": "Inviting, trustworthy, approachable",
+      "prompt": "Photorealistic portrait-like image of an AI consultant on a video call from a tidy studio office. Consultant is mid-conversation, smiling naturally, with a high-quality microphone, notebook, and ambient lighting in brand tones. A large monitor in the background shows a blurred interface with an agenda titled 'Roadmap Call'. Depth of field should keep focus on the consultant while hinting at the professional setting.",
+      "negative_prompt": "headset gamer aesthetic, dim lighting, messy background, exaggerated expressions"
+    }
+  ],
+  "graphic_sets": [
+    {
+      "id": "diagram-intelligent-workflow",
+      "usage": "Approach section or hero supporting graphic",
+      "prompt": "Create a vector illustration of an intelligent workflow map with four rounded rectangles connected by smooth gradients in blue and violet hues. Each node should have minimalist icons for discover, design, build, amplify. Incorporate subtle dotted lines, translucent layers, and soft glow to match the Rightword.AI palette. Maintain ample whitespace and a modern product design aesthetic.",
+      "style": "Clean vector, semi-flat, 3D lighting accents"
+    },
+    {
+      "id": "card-automation-benefits",
+      "usage": "Outcomes section infographic highlights",
+      "prompt": "Design a set of three matching infographic cards featuring concise metrics placeholders, radial progress rings, and miniature icons representing efficiency, accuracy, and visibility. Use the brand gradient from deep blue to soft purple, with light backgrounds and glassmorphism accents."
+    },
+    {
+      "id": "ambient-grid-texture",
+      "usage": "Subtle background texture for hero and footer",
+      "prompt": "Generate a seamless vector pattern consisting of faint isometric grid lines and circular pulses in translucent navy and lavender. The pattern should be lightweight, with generous spacing so it can overlay on white backgrounds without overpowering content."
+    }
+  ]
+}
