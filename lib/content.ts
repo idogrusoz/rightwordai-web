@@ -124,13 +124,13 @@ export const contactContent = {
   subheadline:
     "The gap widens every quarter. Book your strategy call now—only 3 slots left this quarter. If not now, when? If not you, who?",
   contactMethods: [
-    { label: "hello@rightword.ai", href: "mailto:hello@rightword.ai" },
+    { label: "info@rightword.ai", href: "mailto:info@rightword.ai" },
     { label: "Claim your slot now", href: "https://cal.com/rightword-ai/roadmap" }
   ]
 };
 
 export const footerLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/rightword-ai" },
-  { label: "Email", href: "mailto:hello@rightword.ai" },
+  { label: "Email", href: "mailto:info@rightword.ai" },
   { label: "Privacy", href: "https://www.rightword.ai/privacy" }
 ];

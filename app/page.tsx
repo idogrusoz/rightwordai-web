@@ -13,6 +13,7 @@ import { ROICalculator } from "@/components/ROICalculator";
 import { CountUp } from "@/components/CountUp";
 import { FOMOTicker } from "@/components/FOMOTicker";
 import { BackToTop } from "@/components/BackToTop";
+import { ContactForm } from "@/components/ContactForm";
 import {
   heroContent,
   valuePropositions,
@@ -505,6 +506,15 @@ function ContactSection() {
               In 45 minutes, we'll map your highest-leverage automation opportunities and show you 
               exactly how fast you can move. <span className="font-bold text-slate-900">Your competitors aren't hesitating. Why are you?</span>
             </p>
+
+            {/* Contact Form */}
+            <div className="mt-16">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-slate-900">Or send us a message</h3>
+                <p className="mt-2 text-sm text-slate-600">We'll respond within 24 hours</p>
+              </div>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </ScrollReveal>
