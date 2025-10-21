@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { LocaleClientProvider } from '@/components/LocaleClientProvider';
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -64,7 +65,7 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.className} ${plusJakarta.variable} bg-white text-slate-900 antialiased selection:bg-brand-light/30 selection:text-slate-900 font-sans`}
       >
-        {children}
+        <LocaleClientProvider>{children}</LocaleClientProvider>
       </body>
     </html>
   );

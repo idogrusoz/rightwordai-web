@@ -1,18 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fomoMessages } from "@/lib/stats";
+import { useLocale } from '@/lib/locale-context';
 
 export function FOMOTicker() {
-  // Duplicate messages for seamless loop
-  const messages = [...fomoMessages, ...fomoMessages];
+  const { dict } = useLocale();
+  const msgs = dict.fomo.messages as string[];
+  const messages = [...msgs, ...msgs];
 
   return (
     <div className="relative overflow-hidden bg-slate-900 py-3">
       <motion.div
         className="flex gap-12 whitespace-nowrap"
         animate={{
-          x: [0, -50 * fomoMessages.length + "%"]
+          x: [0, -50 * msgs.length + "%"]
         }}
         transition={{
           x: {
@@ -32,4 +33,3 @@ export function FOMOTicker() {
     </div>
   );
 }
-

@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { urgencyIndicators } from "@/lib/stats";
+import { useLocale } from '@/lib/locale-context';
 
 export function UrgencyBanner() {
+  const { dict } = useLocale();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -21,13 +24,12 @@ export function UrgencyBanner() {
           <span className="relative inline-flex h-3 w-3 rounded-full bg-urgency-amber"></span>
         </span>
         <span className="font-semibold text-slate-900">
-          Only {urgencyIndicators.slotsAvailable} consultation slots available this quarter
+          {dict.urgencyBanner.only} {urgencyIndicators.slotsAvailable} {dict.urgencyBanner.consultationSlots}
         </span>
         <span className="hidden sm:inline text-slate-600">
-          · Next opening: {urgencyIndicators.nextAvailability}
+          {dict.urgencyBanner.nextOpening} {urgencyIndicators.nextAvailability}
         </span>
       </div>
     </motion.div>
   );
 }
-
