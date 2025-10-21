@@ -24,10 +24,9 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
-
-    // Send email using Resend
+    
     const data = await resend.emails.send({
-      from: "Rightword.AI Contact Form <onboarding@resend.dev>", // You'll need to verify your domain
+      from: "onboarding@resend.dev",
       to: "ibrahim@rightword.be",
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
@@ -42,7 +41,14 @@ export async function POST(request: Request) {
         <p style="color: #666; font-size: 12px;">This email was sent from the contact form at rightword.ai</p>
       `,
     });
-    console.log("Resend API response:", JSON.stringify(data, null, 2));
+    
+    console.log("✅ Resend API response:", JSON.stringify(data, null, 2));
+    
+    // Check if there's an error in the response
+    if (data.error) {
+      console.error("⚠️ Resend returned an error:", data.error);
+      throw new Error(`Resend error: ${JSON.stringify(data.error)}`);
+    }
 
     return NextResponse.json(
       { message: "Email sent successfully", data },

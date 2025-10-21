@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     "SMB AI",
     "process optimization"
   ],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg"
+  },
   openGraph: {
     title: "Engineering intelligence into every process.",
     description:
