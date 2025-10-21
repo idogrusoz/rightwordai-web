@@ -61,7 +61,7 @@ export function ROICalculator() {
             <div>
               <label className="flex items-center justify-between mb-3">
                 <span className="text-sm font-semibold text-slate-900">Avg. Hourly Cost</span>
-                <span className="text-2xl font-bold text-brand-base">${metrics.avgHourlyCost}</span>
+                <span className="text-2xl font-bold text-brand-base">€{metrics.avgHourlyCost}</span>
               </label>
               <input
                 type="range"
@@ -101,10 +101,10 @@ export function ROICalculator() {
             >
               <p className="text-sm font-semibold text-slate-600">Annual Cost of Manual Work</p>
               <p className="mt-2 text-4xl font-bold text-urgency-red">
-                ${calculations.yearlyWaste.toLocaleString()}
+                €{calculations.yearlyWaste.toLocaleString()}
               </p>
               <p className="mt-2 text-xs text-slate-500">
-                ${calculations.monthlyWaste.toLocaleString()}/month · ${calculations.weeklyWaste.toLocaleString()}/week
+                €{calculations.monthlyWaste.toLocaleString()}/month · €{calculations.weeklyWaste.toLocaleString()}/week
               </p>
             </motion.div>
 
@@ -116,7 +116,7 @@ export function ROICalculator() {
             >
               <p className="text-sm font-semibold text-slate-600">Potential Annual Savings with AI</p>
               <p className="mt-2 text-4xl font-bold text-success-base">
-                ${calculations.aiSavings.toLocaleString()}
+                €{calculations.aiSavings.toLocaleString()}
               </p>
               <p className="mt-2 text-xs text-slate-500">
                 Based on 75% efficiency improvement
@@ -137,7 +137,7 @@ export function ROICalculator() {
 
         <div className="mt-10 text-center">
           <p className="text-sm font-semibold text-slate-900">
-            Every month you wait costs <span className="text-urgency-red">${calculations.monthlyWaste.toLocaleString()}</span> in lost productivity
+            Every month you wait costs <span className="text-urgency-red">€{calculations.monthlyWaste.toLocaleString()}</span> in lost productivity
           </p>
           <p className="mt-2 text-xs text-slate-600">
             When will you stop letting competitors eat your market share?
