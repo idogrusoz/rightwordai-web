@@ -6,14 +6,10 @@ import { SectionHeading } from '@/components/SectionHeading';
 import { Button } from '@/components/Button';
 import { ScrollReveal } from '@/components/ScrollReveal';
 import { StatCard } from '@/components/StatCard';
-import { UrgencyBanner } from '@/components/UrgencyBanner';
 import { CompetitiveGapChart } from '@/components/CompetitiveGapChart';
 import { ROICalculator } from '@/components/ROICalculator';
-import { CountUp } from '@/components/CountUp';
-import { FOMOTicker } from '@/components/FOMOTicker';
 import { BackToTop } from '@/components/BackToTop';
 import { ContactForm } from '@/components/ContactForm';
-import { urgencyIndicators } from '@/lib/stats';
 import { useScrollProgress } from '@/hooks/useScrollProgress';
 import { staggerContainer, staggerItem } from '@/lib/animations';
 import { useLocale } from '@/lib/locale-context';
@@ -26,7 +22,6 @@ export default function LocalizedHomePage() {
     <div id="top" className="flex min-h-screen flex-col">
       <motion.div className="scroll-progress" style={{ scaleX: scrollProgress / 100 }} />
       <Header />
-      <FOMOTicker />
       <BackToTop />
       <main className="flex-1 pb-24">
         <Hero />
@@ -36,7 +31,6 @@ export default function LocalizedHomePage() {
         <ServicesSection />
         <ProcessSection />
         <GainsSection />
-        <UrgencySection />
         <ContactSection />
       </main>
       <Footer />
@@ -48,11 +42,10 @@ function Hero() {
   const { dict } = useLocale();
   const h = dict.hero;
   return (
-    <section className="section-container relative mt-24 overflow-hidden rounded-[2.5rem] border border-slate-200/70 px-8 py-24 shadow-elevated animated-gradient">
+    <section className="section-container relative mt-4 overflow-hidden rounded-[2.5rem] border border-slate-200/70 px-8 py-14 shadow-elevated animated-gradient">
       {/* Animated blobs */}
       <motion.div className="pointer-events-none absolute -top-32 right-10 h-72 w-72 rounded-full bg-brand-soft/80 blur-blob" animate={{ y: [0, 30, 0], x: [0, 20, 0] }} transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }} />
       <motion.div className="pointer-events-none absolute -bottom-24 left-0 h-80 w-80 rounded-full bg-brand-light/20 blur-blob" animate={{ y: [0, -30, 0], x: [0, -20, 0] }} transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }} />
-      <div className="mb-12 flex justify-center"><UrgencyBanner /></div>
       <motion.div className="grid gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-center" variants={staggerContainer} initial="hidden" animate="visible">
         <motion.div className="flex flex-col gap-10" variants={staggerItem}>
           <motion.div variants={staggerItem} className="flex flex-col gap-3">
@@ -268,41 +261,7 @@ function GainsSection() {
   );
 }
 
-function UrgencySection() {
-  const { dict } = useLocale();
-  const u = dict.urgency;
-  return (
-    <section className="section-container mt-28">
-      <ScrollReveal animation="scaleIn">
-        <div className="relative overflow-hidden rounded-[2.5rem] border-2 border-urgency-red/30 bg-gradient-to-br from-urgency-red/10 via-urgency-amber/10 to-urgency-red/5 p-12 lg:p-16 text-center shadow-amber-glow">
-          <motion.div className="pointer-events-none absolute top-0 right-0 h-64 w-64 rounded-full bg-urgency-amber/20 blur-blob" animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }} transition={{ duration: 4, repeat: Infinity }} />
-          <div className="relative z-10">
-            <span className="eyebrow text-urgency-red">{u.eyebrow}</span>
-            <h2 className="mt-6 text-4xl font-bold text-slate-900 sm:text-5xl">{u.title}</h2>
-            <p className="mt-6 text-xl text-slate-700 max-w-3xl mx-auto">
-              {u.status(urgencyIndicators.companiesHelpedThisMonth, urgencyIndicators.slotsAvailable)}
-            </p>
-            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-urgency-red"><CountUp end={urgencyIndicators.slotsAvailable} suffix={`/${urgencyIndicators.totalSlots}`} /></div>
-                <p className="mt-2 text-sm font-semibold text-slate-600">{u.slotsRemaining}</p>
-              </div>
-              <div className="hidden sm:block h-16 w-px bg-slate-300" />
-              <div className="text-center">
-                <div className="text-5xl font-bold text-slate-900">{urgencyIndicators.nextAvailability}</div>
-                <p className="mt-2 text-sm font-semibold text-slate-600">{u.nextAvailability}</p>
-              </div>
-            </div>
-            <div className="mt-12">
-              <Button href="#contact" className="text-lg px-8 py-4">{u.button}</Button>
-              <p className="mt-4 text-sm text-slate-600">{u.details(urgencyIndicators.consultationDuration)}</p>
-            </div>
-          </div>
-        </div>
-      </ScrollReveal>
-    </section>
-  );
-}
+// Urgency section removed per request
 
 function ContactSection() {
   const { dict } = useLocale();
