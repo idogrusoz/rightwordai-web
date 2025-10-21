@@ -1,7 +1,19 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization to avoid errors during build time
+let resend: Resend | null = null;
+
+function getResendClient() {
+  if (!resend) {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      throw new Error("RESEND_API_KEY environment variable is not set");
+    }
+    resend = new Resend(apiKey);
+  }
+  return resend;
+}
 
 export async function POST(request: Request) {
   try {
@@ -23,9 +35,10 @@ export async function POST(request: Request) {
         { error: "Invalid email address" },
         { status: 400 }
       );
-    }
-    
-    const data = await resend.emails.send({
+      }
+
+      const resendClient = getResendClient();
+      const data = await resendClient.emails.send({
       from: "onboarding@resend.dev",
       to: "ibrahim@rightword.be",
       replyTo: email,

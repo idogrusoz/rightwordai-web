@@ -41,6 +41,7 @@ jobs:
         run: pnpm build
         env:
           NEXT_TELEMETRY_DISABLED: 1
+          RESEND_API_KEY: 'build-time-placeholder'  # Actual key comes from Azure env vars at runtime
 
       - name: Deploy
         uses: Azure/static-web-apps-deploy@v1
